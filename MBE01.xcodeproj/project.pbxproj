@@ -12,6 +12,8 @@
 		81EDB7D61C1CA3CB00E36872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EDB7D41C1CA3CB00E36872 /* Main.storyboard */; };
 		81EDB7D81C1CA3CB00E36872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EDB7D71C1CA3CB00E36872 /* Assets.xcassets */; };
 		81EDB7DB1C1CA3CB00E36872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EDB7D91C1CA3CB00E36872 /* LaunchScreen.storyboard */; };
+		81EDB7E31C1CA42000E36872 /* MBEMetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EDB7E21C1CA42000E36872 /* MBEMetailView.swift */; };
+		81EDB7E71C1CA85000E36872 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EDB7E61C1CA85000E36872 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		81EDB7D71C1CA3CB00E36872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81EDB7DA1C1CA3CB00E36872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81EDB7DC1C1CA3CB00E36872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81EDB7E21C1CA42000E36872 /* MBEMetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBEMetailView.swift; sourceTree = "<group>"; };
+		81EDB7E41C1CA80500E36872 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		81EDB7E61C1CA85000E36872 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EDB7E71C1CA85000E36872 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +44,8 @@
 		81EDB7C41C1CA3CB00E36872 = {
 			isa = PBXGroup;
 			children = (
+				81EDB7E61C1CA85000E36872 /* QuartzCore.framework */,
+				81EDB7E41C1CA80500E36872 /* Metal.framework */,
 				81EDB7CF1C1CA3CB00E36872 /* MBE01 */,
 				81EDB7CE1C1CA3CB00E36872 /* Products */,
 			);
@@ -60,6 +68,7 @@
 				81EDB7D71C1CA3CB00E36872 /* Assets.xcassets */,
 				81EDB7D91C1CA3CB00E36872 /* LaunchScreen.storyboard */,
 				81EDB7DC1C1CA3CB00E36872 /* Info.plist */,
+				81EDB7E21C1CA42000E36872 /* MBEMetailView.swift */,
 			);
 			path = MBE01;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					81EDB7CC1C1CA3CB00E36872 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 999K8DF3SQ;
 					};
 				};
 			};
@@ -136,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81EDB7D31C1CA3CB00E36872 /* ViewController.swift in Sources */,
+				81EDB7E31C1CA42000E36872 /* MBEMetailView.swift in Sources */,
 				81EDB7D11C1CA3CB00E36872 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MBE01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = just.MBE01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MBE01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = just.MBE01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
