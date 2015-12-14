@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		818A12611C1F4A6600688D42 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 818A12601C1F4A6600688D42 /* Shaders.metal */; };
 		81EDB7D11C1CA3CB00E36872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EDB7D01C1CA3CB00E36872 /* AppDelegate.swift */; };
 		81EDB7D31C1CA3CB00E36872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EDB7D21C1CA3CB00E36872 /* ViewController.swift */; };
 		81EDB7D61C1CA3CB00E36872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EDB7D41C1CA3CB00E36872 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		818A12601C1F4A6600688D42 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = Shaders.metal; path = ../Shaders.metal; sourceTree = "<group>"; };
 		81EDB7CD1C1CA3CB00E36872 /* MBE01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBE01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EDB7D01C1CA3CB00E36872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81EDB7D21C1CA3CB00E36872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		81EDB7CF1C1CA3CB00E36872 /* MBE01 */ = {
 			isa = PBXGroup;
 			children = (
+				818A12601C1F4A6600688D42 /* Shaders.metal */,
 				81EDB7D01C1CA3CB00E36872 /* AppDelegate.swift */,
 				81EDB7D21C1CA3CB00E36872 /* ViewController.swift */,
 				81EDB7D41C1CA3CB00E36872 /* Main.storyboard */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818A12611C1F4A6600688D42 /* Shaders.metal in Sources */,
 				81EDB7D31C1CA3CB00E36872 /* ViewController.swift in Sources */,
 				81EDB7E31C1CA42000E36872 /* MBEMetailView.swift in Sources */,
 				81EDB7D11C1CA3CB00E36872 /* AppDelegate.swift in Sources */,
@@ -303,6 +307,7 @@
 				81EDB7E11C1CA3CB00E36872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
